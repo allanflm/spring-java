@@ -58,6 +58,7 @@ public class SecurityConfig {
     // Configura o PasswordEncoder para criptografar senhas usando BCrypt
     @Bean
     public PasswordEncoder passwordEncoder() {
+
         return new BCryptPasswordEncoder(); // Retorna uma instância de BCryptPasswordEncoder
     }
 
